@@ -31,7 +31,7 @@ public class App {
 		double newAmountMoney2 = moneyInWallet2 - itemPrice2;  //4(a)
 		
 		
-		//possible wrong data types??? - Suggestion on Stack Overflow
+		//possible wrong data types??? - Suggestion on Stack Overflow to avoid integer rounding
 		double friendsPerYear1 = (double)numberFriends1 / age1; //4(b)
 		double friendsPerYear2 = (double)numberFriends2 / age2; //4(b)
 		
