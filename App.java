@@ -10,8 +10,8 @@ public class App {
 		double moneyInWallet1 = 20.00; //3(b)
 		double moneyInWallet2 = 45.00; //3(b)
 		
-		int numberFriends1 = 8;  //3(c)
-		int numberFriends2 = 28;  //3(c)
+		int numberFriends1 = 58;  //3(c)
+		int numberFriends2 = 128;  //3(c)
 		
 		int age1 = 44; //3(d)
 		int age2 = 37; //3(d)
@@ -30,8 +30,10 @@ public class App {
 		double newAmountMoney1 = moneyInWallet1 - itemPrice1;  //4(a)
 		double newAmountMoney2 = moneyInWallet2 - itemPrice2;  //4(a)
 		
-		float friendsPerYear1 = age1 / numberFriends1; //4(b)
-		float friendsPerYear2 = age2 / numberFriends2; //4(b)
+		
+		//possible wrong data types??? - Suggestion on Stack Overflow
+		double friendsPerYear1 = (double)numberFriends1 / age1; //4(b)
+		double friendsPerYear2 = (double)numberFriends2 / age2; //4(b)
 		
 		String fullName1 = firstName1 + " " + middleInitial1 + " " + lastName1;
 		String fullName2 = firstName2 + " " + middleInitial2 + " " + lastName2;
@@ -39,8 +41,14 @@ public class App {
 		System.out.println("I have exactly $"+ newAmountMoney1 + " in my wallet.");
 		System.out.println("My coworker has exactly $"+ newAmountMoney2 + " in his wallet.");
 		
+		//Question 5 - Average Number of Friends
 		System.out.println("\nI have made about "+ friendsPerYear1 + " friends for each year I have been alive.");
 		System.out.println("My wife has made about "+ friendsPerYear2 + " friends for each year she has been alive.");
+		
+		//Question 5 - Names
+		System.out.println("\nMy full name is "+ firstName1 + " " + middleInitial1 +". " + lastName1);
+		System.out.println("My friend's name is "+ firstName2 + " " + middleInitial2 +". " + lastName2);
+
 		
 	}
 
