@@ -2,52 +2,55 @@
 public class App {
 
 	public static void main(String[] args) {
-		// Intro to Java Week 1 Coding Assignment
+		// Intro to Java Week 1 Coding Assignment 		
 		
-		double itemPrice1 = 4.99; //3(a)
-		double itemPrice2 = 5.41; //3(a)
+		//using primitive data types - initializing and setting double variables - Question 3(a)
+		double itemPrice1 = 4.99; 
+		double itemPrice2 = 5.41; 
 		
-		double moneyInWallet1 = 20.00; //3(b)
-		double moneyInWallet2 = 45.00; //3(b)
+		//using primitive data types - initializing and setting double variables - Question 3(b)
+		double moneyInWallet1 = 20.00; 
+		double moneyInWallet2 = 45.00; 
 		
-		int numberFriends1 = 58;  //3(c)
-		int numberFriends2 = 128;  //3(c)
+		//using primitive data types - initializing and setting int variables - Question 3(c)
+		int numberFriends1 = 58;  
+		int numberFriends2 = 128;  
 		
-		int age1 = 44; //3(d)
-		int age2 = 37; //3(d)
+		//using primitive data types - initializing and setting int variables - Question 3(d)
+		int age1 = 44; 
+		int age2 = 37; 
 		
-		String firstName1 = "Jeff"; //3(e)
-		String firstName2 = "Steve";  //3(e)
+		//using Strings - initializing and setting String variables - Question 3(e)
+		String firstName1 = "Jeff"; 
+		String firstName2 = "Steve";  
+	
+		//using Strings - initializing and setting String variables - Question 3(f)
+		String lastName1 = "Haupt";  
+		String lastName2 = "Dave";  
 		
-		String lastName1 = "Haupt";  //3(f)
-		String lastName2 = "Dave";  //3(f)
+		//using primitive data types - initializing and setting char variables - Question 3(g)
+		char middleInitial1 = 'M'; 
+		char middleInitial2 = 'K';  
 		
-		char middleInitial1 = 'M'; //3(g)
-		char middleInitial2 = 'K';  //3(g)
+		//Creating, initializing, and setting new variables using operations - Question 4
+		double newAmountMoney1 = moneyInWallet1 - itemPrice1; 
+		double newAmountMoney2 = moneyInWallet2 - itemPrice2;  
 		
-		// #4 Variables 
+		//Casting type
+		double friendsPerYear1 = (double)numberFriends1 / age1;
+		double friendsPerYear2 = (double)numberFriends2 / age2; 
 		
-		double newAmountMoney1 = moneyInWallet1 - itemPrice1;  //4(a)
-		double newAmountMoney2 = moneyInWallet2 - itemPrice2;  //4(a)
-		
-		
-		//possible wrong data types??? - Suggestion on Stack Overflow to avoid integer rounding
-		double friendsPerYear1 = (double)numberFriends1 / age1; //4(b)
-		double friendsPerYear2 = (double)numberFriends2 / age2; //4(b)
-		
+		//Concatenation of string variables 
 		String fullName1 = firstName1 + " " + middleInitial1 + " " + lastName1;
 		String fullName2 = firstName2 + " " + middleInitial2 + " " + lastName2;
 		
+		//Question 5 - using System.out.println to print to the console
 		System.out.println("I have exactly $"+ newAmountMoney1 + " in my wallet.");
 		System.out.println("My coworker has exactly $"+ newAmountMoney2 + " in his wallet.");
-		
-		//Question 5 - Average Number of Friends
 		System.out.println("\nI have made about "+ friendsPerYear1 + " friends for each year I have been alive.");
 		System.out.println("My wife has made about "+ friendsPerYear2 + " friends for each year she has been alive.");
-		
-		//Question 5 - Names
-		System.out.println("\nMy full name is "+ firstName1 + " " + middleInitial1 +". " + lastName1);
-		System.out.println("My friend's name is "+ firstName2 + " " + middleInitial2 +". " + lastName2);
+		System.out.println("\nMy full name is "+ fullName1);
+		System.out.println("My friend's name is "+ fullName2);
 
 		
 	}
